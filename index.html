@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон сотовой связи</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/mycss.css">
+  
+  <link rel="stylesheet" href="data:image/png;base64,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">
+  <link rel="stylesheet" href="/source/styles/video.css">
+  <style>
+    video{
+      height: 70vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .xnj-nj{
+      height: 70vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-t{
+      color: aquamarine;
+      z-index: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img
+            src="https://avatars.dzeninfra.ru/get-zen_doc/5233669/pub_6264fe6d9940f20000b142c3_6264fe7b9940f20000b15b47/scale_1200"
+            alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">
+                <img style="width: 45px; margin-inline: 1em;"
+                  src="https://cdn.freelance.ru/images/att/1840377_900_600.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">
+                <img style="width: 45px; margin-inline: 1em;"
+            src="https://100tails.ru/wp-content/uploads/2022/06/red-youtube-logo-png-xl.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="xnj-nj">
+      <video src="source/files/videoplayback.mp4" type="video/mp4" autoplay muted loop></video>
+      <div class="video-t">
+        <h1>Future Here</h1>
+      </div>
+    </div>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-lg-1">
+
+        </div>
+
+        <div class="col-lg-8 col-md-12">
+
+          <div class="row">
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img
+                          src="https://cdn.citilink.ru/4dBaer7zsueHGSpKsy1z15l9ifQvTLL8k19aAAxsoro/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/8b82d3f2-ba23-43aa-9aad-54da693fcb36.jpg"
+                          class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 lorem">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet aliquam, placeat
+                          maxime necessitatibus mollitia inventore nostrum consectetur harum autem! Quasi suscipit sed
+                          quos. Rerum.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img
+                          src="https://mobilegadjet.ru/uploads/posts/2023-04/x1682090323_samsung-galaxy-a13-1.jpg.pagespeed.ic.KofbD6-htX.webp"
+                          class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 lorem">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernattis nostrum incidunt
+                          laboriosam ab non? Illo voluptates vel, animi atque quisquam sunt?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img
+                          src="https://cdn.citilink.ru/Ox6-wu31IVCtIAlbqwWgKPv07fKZafzq1fJnM9qseFI/resizing_type:fit/gravity:sm/width:400/height:400/plain/items/1979604_v01_b.jpg"
+                          class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 lorem">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, placeat. Perspiciatis
+                          nostrum incidunt laboriosam ab non? Illo vol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img
+                          src="https://mobilegadjet.ru/uploads/posts/2023-04/x1682090323_samsung-galaxy-a13-1.jpg.pagespeed.ic.KofbD6-htX.webp"
+                          class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 lorem">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernattis nostrum incidunt
+                          laboriosam ab non? Illo voluptates vel, animi atque quisquam sunt?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="col-lg-12 col-md-12 text-center mt-4">
+              <button type="button" class="btn btn-outline-primary btn-lg my-4">See More</button>
+            </div>
+            <div class="col-lg-12 col-md-12 text-center mt-4">
+              <p>Can we help you?</p>
+            </div>
+            <div class="col-lg-12 col-md-12 text-center">
+          <img style="width: 50px;" src="https://avatars.mds.yandex.net/i?id=d451e25442908a7bd88e0934d0bab71bd3959736-10993330-images-thumbs&n=13">
+              
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <div class="row px-2">
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus soluta ad, suscipit at commodi unde
+                cupiditate consectetur reprehenderit? Velit temporibus assumenda sed voluptatum ducimus, voluptate
+                incidunt. <a href="#">Learn more</a></p>
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus soluta ad, suscipit at commodi unde
+                cupiditate consectetur reprehenderit? agjhfjjfjfjjjjjjjjjjjjjjjjjjjjjjjjjjjVelit temporibus assumenda
+                sed voluptatum ducimus, voluptate incidunt. <a href="#">Learn more</a></p>
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor uta ad, suscipit at commodi unde cupiditate consectetur reprehenderit? Velit
+                temporibus assumenda sed voluptatum duciincidunt. <a href="#">Learn more</a></p>
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem elit. Ducimus soluta ad, suscipit at commodi unde cupiditate consectetur reprehenderit? Velit
+                temporibus assumenda sed voluptatum ducimus, voluptate incidunt. <a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="mt-4">
+    <div class="container-f">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 footer-text text-center">
+          <p>All Right Reserved 2023</p>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-text text-center">
+          <p> Contacts <br> Job<br> Our Team</p>
+        </div>
+        <div class="col-lg-4 col-md-12 media-l">
+          <img style="width: 50px; margin-inline: 1em;" src="https://cdn.freelance.ru/images/att/1840377_900_600.png"
+            alt="">
+          <img style="width: 50px; margin-inline: 1em;"
+            src="https://100tails.ru/wp-content/uploads/2022/06/red-youtube-logo-png-xl.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

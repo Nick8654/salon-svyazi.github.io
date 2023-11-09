@@ -1,0 +1,14 @@
+.xnj-nj {
+    height: 70vh;
+    width: 80%;
+    position: relative;
+}
+
+.xnj-nj video{
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
